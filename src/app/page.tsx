@@ -1,101 +1,141 @@
 import Image from "next/image";
+import Link from "next/link";
+
+export const metadata = {
+  title: "Home | Sparsh's Portfolio",
+  description: 'Get to know about my role in programming, my job preferences and availibility and connect with me.',
+  keywords: "sparsh's portfolio, sparsh's role, sparsh's preferences, sparsh's image, hire sparsh",
+  author: 'Sparsh Pandya',
+  openGraph: {
+      title: "Home | Sparsh's Portfolio",
+      description: 'Get to know about my programming role, job preferences and availibility and connect with me.'
+  }
+}
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div data-scroll-index="0" id="home">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <div className="hero-section px-5 py-8 md:p-8 bg-white dark:bg-nightBlack rounded-2xl lg:p-10 2xl:p-13">
+        <div
+          className="inline-flex items-center gap-2 px-4 py-2 text-xs tracking-wide text-black dark:text-white border lg:px-5 section-name border-platinum dark:border-greyBlack200 rounded-4xl">
+          <i className="fal fa-home text-theme"></i>
+          INTRODUCE
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="items-center gap-6 hero-content md:flex xl:gap-10">
+          <div className="text-content pt-7 lg:pt-8 max-lg:max-w-[30rem]">
+            <h1
+              className="text-[32px] lg:text-5xl xl:text-4xl 2xl:text-5xl font-semibold text-black dark:text-white leading-1.27 lg:leading-1.27 xl:leading-1.27 2xl:leading-1.27 mb-4 lg:mb-5">
+              Hello I'm Sparsh <br />
+              <span className="text-theme">Full-stack Developer</span>
+            </h1>
+            <p>
+              I am a <span className="font-medium text-black dark:text-white/90">Full-stack Developer</span> at heart and, i create features that are best suited for the job at hand.
+            </p>
+            <ul className="flex items-center mt-4 -mx-3 lg:mt-5 *:flex *:items-center *:mx-3 *:text-regular">
+              <li>
+                <i className="mr-2 fal fa-check-double text-theme"></i>
+                Available for work
+              </li>
+              <li>
+                <i className="mr-2 fal fa-check-double text-theme"></i>
+                Full Time Job
+              </li>
+            </ul>
+            <ul className="mt-7 buttons">
+              <li data-scroll-nav="8">
+                <Link href='/contact-me'
+                  className="btn-theme inline-flex items-center gap-2 bg-theme py-4 md:py-4.5 lg:px-9 px-7 rounded-4xl leading-none transition-all duration-300 hover:shadow-theme_shadow text-white font-medium text-[15px] md:text-base">
+                  <i className="fal fa-paper-plane"></i>
+                  HIRE ME
+                </Link>
+              </li>
+            </ul>
+
+          </div>
+          <div className="hero-image flex-[0_0_20.3rem] max-md:hidden">
+            <img
+              src="/img/hero-img-1.png"
+              className="dark:hidden"
+              alt="Hero Image - Light Mode" />
+            <img
+              src="/img/author-b&w.jpg"
+              className="hidden dark:block"
+              alt="Hero Image - Dark Mode" />
+          </div>
+        </div>
+        <div className="mb-2 mt-14 xl:mb-0 xl:mt-20">
+          <div className="items-center grid-cols-12 overflow-hidden md:grid">
+            <div className="hidden col-span-2 md:inline-block">
+              <h6
+                className="font-medium text-black dark:text-white/80 text-sm md:max-w-[8rem] border-l border-theme pl-4">
+                Trusted companies
+              </h6>
+            </div>
+            <div className="col-span-10 logo-slider">
+              <div className="swiper">
+                <div className="swiper-wrapper">
+                  <div className="swiper-slide">
+                    <a href="#"
+                      className="transition duration-200 flex-center">
+                      <img src="/img/partners/logo1.svg" alt="Partner Name" />
+                    </a>
+                  </div>
+                  <div className="swiper-slide">
+                    <a href="#"
+                      className="transition duration-200 flex-center">
+                      <img src="/img/partners/logo2.svg" alt="Partner Name" />
+                    </a>
+                  </div>
+                  <div className="swiper-slide">
+                    <a href="#"
+                      className="transition duration-200 flex-center">
+                      <img src="/img/partners/logo3.svg" alt="Partner Name" />
+                    </a>
+                  </div>
+                  <div className="swiper-slide">
+                    <a href="#"
+                      className="transition duration-200 flex-center">
+                      <img src="/img/partners/logo4.svg" alt="Partner Name" />
+                    </a>
+                  </div>
+                  <div className="swiper-slide">
+                    <a href="#"
+                      className="transition duration-200 flex-center">
+                      <img src="/img/partners/logo2.svg" alt="Partner Name" />
+                    </a>
+                  </div>
+                  <div className="swiper-slide">
+                    <a href="#"
+                      className="transition duration-200 flex-center">
+                      <img src="/img/partners/logo4.svg" alt="Partner Name" />
+                    </a>
+                  </div>
+                  <div className="swiper-slide">
+                    <a href="#"
+                      className="transition duration-200 flex-center">
+                      <img src="/img/partners/logo2.svg" alt="Partner Name" />
+                    </a>
+                  </div>
+                  <div className="swiper-slide">
+                    <a href="#"
+                      className="transition duration-200 flex-center">
+                      <img src="/img/partners/logo4.svg" alt="Partner Name" />
+                    </a>
+                  </div>
+                  <div className="swiper-slide">
+                    <a href="#"
+                      className="transition duration-200 flex-center">
+                      <img src="/img/partners/logo2.svg" alt="Partner Name" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 }
