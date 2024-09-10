@@ -1,3 +1,9 @@
+import { faCss3, faCss3Alt, faHtml5, faJs, faNodeJs, faPhp, faReact } from "@fortawesome/free-brands-svg-icons";
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaDatabase } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
 
 export const metadata = {
     title: "Skills | Sparsh's Portfolio",
@@ -36,7 +42,7 @@ export default function Skills() {
                         <div className="swiper-wrapper *:space-y-5 *:text-center">
                             <div className="swiper-slide">
                                 <div className="text-center icon">
-                                    <img src="/img/skill/figma.svg" className="dark:grayscale" alt="Figma" />
+                                <FontAwesomeIcon icon={faReact} size="2xl" style={{ width: '50' }} />
                                 </div>
                                 <div className="progressCircle">
                                     <div className="relative w-32 h-32 mx-auto circle md:w-40 md:h-40"
@@ -50,7 +56,7 @@ export default function Skills() {
                             </div>
                             <div className="swiper-slide">
                                 <div className="text-center icon">
-                                    <img src="/img/skill/webflow.svg" className="dark:grayscale" alt="webflow" />
+                                <FontAwesomeIcon icon={faReact} style={{ width: '50' }} />
                                 </div>
                                 <div className="progressCircle">
                                     <div className="relative w-32 h-32 mx-auto circle md:w-40 md:h-40"
@@ -60,7 +66,7 @@ export default function Skills() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="text-black dark:text-white name">React.js</div>
+                                <div className="text-black dark:text-white name">React.js</div> 
                             </div>
                             <div className="swiper-slide">
                                 <div className="text-center icon">
@@ -78,7 +84,7 @@ export default function Skills() {
                             </div>
                             <div className="swiper-slide">
                                 <div className="text-center icon">
-                                    <img src="/img/skill/html.svg" className="dark:grayscale" alt="HTML5" />
+                                <FontAwesomeIcon icon={faNodeJs} style={{ width: '50' }} />
                                 </div>
                                 <div className="progressCircle">
                                     <div className="relative w-32 h-32 mx-auto circle md:w-40 md:h-40"
@@ -92,7 +98,7 @@ export default function Skills() {
                             </div>
                             <div className="swiper-slide">
                                 <div className="text-center icon">
-                                    <img src="/img/skill/css.svg" className="dark:grayscale" alt="CSS3" />
+                                <FontAwesomeIcon icon={faNodeJs} style={{ width: '50' }} />
                                 </div>
                                 <div className="progressCircle">
                                     <div className="relative w-32 h-32 mx-auto circle md:w-40 md:h-40"
@@ -106,7 +112,7 @@ export default function Skills() {
                             </div>
                             <div className="swiper-slide">
                                 <div className="text-center icon">
-                                    <img src="/img/skill/js.svg" className="dark:grayscale" alt="JavaScript" />
+                                <FontAwesomeIcon icon={faHtml5} style={{ width: '40' }} />
                                 </div>
                                 <div className="progressCircle">
                                     <div className="relative w-32 h-32 mx-auto circle md:w-40 md:h-40"
@@ -120,7 +126,7 @@ export default function Skills() {
                             </div>
                             <div className="swiper-slide">
                                 <div className="text-center icon">
-                                    <img src="/img/skill/jquery.svg" className="dark:grayscale" alt="jQuery" />
+                                <FontAwesomeIcon icon={faCss3Alt} style={{ width: '40' }} />
                                 </div>
                                 <div className="progressCircle">
                                     <div className="relative w-32 h-32 mx-auto circle md:w-40 md:h-40"
@@ -148,7 +154,7 @@ export default function Skills() {
                             </div>
                             <div className="swiper-slide">
                                 <div className="text-center icon">
-                                    <img src="/img/skill/jquery.svg" className="dark:grayscale" alt="jQuery" />
+                                <FontAwesomeIcon icon={faJs} style={{ width: '50' }} />
                                 </div>
                                 <div className="progressCircle">
                                     <div className="relative w-32 h-32 mx-auto circle md:w-40 md:h-40"
@@ -162,7 +168,7 @@ export default function Skills() {
                             </div>
                             <div className="swiper-slide">
                                 <div className="text-center icon">
-                                    <img src="/img/skill/jquery.svg" className="dark:grayscale" alt="jQuery" />
+                                <FontAwesomeIcon icon={faJs} style={{ width: '50' }} />
                                 </div>
                                 <div className="progressCircle">
                                     <div className="relative w-32 h-32 mx-auto circle md:w-40 md:h-40"
@@ -176,7 +182,7 @@ export default function Skills() {
                             </div>
                             <div className="swiper-slide">
                                 <div className="text-center icon">
-                                    <img src="/img/skill/jquery.svg" className="dark:grayscale" alt="jQuery" />
+                                <FontAwesomeIcon icon={faPhp} style={{ width: '70' }} />
                                 </div>
                                 <div className="progressCircle">
                                     <div className="relative w-32 h-32 mx-auto circle md:w-40 md:h-40"
@@ -218,7 +224,7 @@ export default function Skills() {
                             </div>
                             <div className="swiper-slide">
                                 <div className="text-center icon">
-                                    <img src="/img/skill/jquery.svg" className="dark:grayscale" alt="jQuery" />
+                                <FontAwesomeIcon icon={faDatabase} style={{ width: '40' }} />
                                 </div>
                                 <div className="progressCircle">
                                     <div className="relative w-32 h-32 mx-auto circle md:w-40 md:h-40"

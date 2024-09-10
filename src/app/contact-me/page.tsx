@@ -1,3 +1,5 @@
+import SendMessage from "@/actions/SendMessage"
+import Form from "@/Components/Form"
 
 export const metadata = {
     title: "Contact Me | Sparsh's Portfolio",
@@ -99,19 +101,19 @@ export default function Contact() {
                     </div>
 
                     <div className="md:col-span-7">
-                        <form id="contactForm" action="https://html.themestransmit.com/html/minfotailwind/contact-form.php" method="POST" className="space-y-4">
+                        <Form action={SendMessage}>
                             <div className="form-group">
-                                <input type="text" name="client__name" id="client__name" placeholder="Name"
+                                <input type="text" name="name" id="name" placeholder="Name"
                                     className="w-full p-5 text-sm outline-none h-13 focus:border-theme dark:focus:border-theme dark:placeholder:text-white/40"
                                     required />
                             </div>
                             <div className="form-group">
-                                <input type="email" name="client_email" id="client_email" placeholder="E-Mail"
+                                <input type="email" name="email" id="email" placeholder="E-Mail"
                                     className="w-full p-5 text-sm outline-none h-13 focus:border-theme dark:focus:border-theme dark:placeholder:text-white/40"
                                     required />
                             </div>
                             <div className="form-group">
-                                <textarea name="contact__message" placeholder="Message" rows={5}
+                                <textarea name="message" placeholder="Message" rows={5}
                                     className="w-full px-5 py-4 text-sm outline-none focus:border-theme dark:placeholder:text-white/40"></textarea>
                             </div>
                             <div className=" form-group">
@@ -121,7 +123,7 @@ export default function Contact() {
                                     Send Message
                                 </button>
                             </div>
-                        </form>
+                        </Form>
 
                     </div>
                 </div>

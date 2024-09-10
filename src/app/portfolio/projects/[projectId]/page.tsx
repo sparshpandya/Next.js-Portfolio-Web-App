@@ -54,7 +54,14 @@ export default async function ProjectDetails({ params }: { params: { projectId: 
 
                     <div>
                         <h3 className="mb-3 text-lg font-medium text-black dark:text-white xl:text-2xl">Project Description</h3>
-                        <p className="text-regular !leading-[2]">{project.description}</p>
+                        {/* <p className="text-regular !leading-[2]">{project.description}</p> */}
+                        <ul className="text-regular !leading-[2] list-disc ml-6 my-4">
+                            {project.description && project.description.length > 0 ? (
+                                project.description.map((desc: string) => {
+                                    return <li>{desc}</li>
+                                })
+                            ): (<li>No Description Provided!</li>)}
+                        </ul>
 
                         <div className="grid gap-5 my-8 sm:grid-cols-2 md:gap-8">
                             <div className="overflow-hidden rounded-xl xl:rounded-2xl">
